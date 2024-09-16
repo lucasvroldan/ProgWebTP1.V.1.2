@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Modulo Alumno</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="Main.html">Página Principal</a>
+        <a href="Students.html">Alumnos</a>
+        
+    </div>
+    
+    <div class="main">
+        <div class="header">
+            <h2>Agregar Alumno</h2>
+            <button id="back" onclick="location.href='Students.html'">Atrás</button>
+
+        </div>
+        <br>
+
+        <div class="content">
+            <!-- Contenido -->
+            <form id="alumnoForm">
+                <div class="formulario">
+                    <label for="firstname">Nombre:</label>
+                    <input type="text" id="firstname" required>
+                    
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" id="lastname" required>
+                </div>
+                <br>
+                <button type="submit">Agregar Alumno</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script> <!-- Referencia al nuevo archivo -->
+</body>
+
+</html>

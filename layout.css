@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+}
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: darkturquoise;
+  padding-left: 20px;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+.sidebar a.selected {
+  background-color: white;
+  color: darkturquoise;
+  font-weight: 700;
+}
+.sidebar a:hover {
+  background-color: paleturquoise;
+}
+.header {
+  width: calc(100% - 200px);
+  background-color: lightgray;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+  
+}
+
+.header button{
+  background-color: darkturquoise;
+  color: white;
+  cursor: pointer;
+}
+
+/* REVISAR ESTE BOTOOOOOONNNN */                /*------------------------------------------*/
+
+.header.bottom[id="back"]{
+  background-color: red;
+  color:white;
+  cursor: pointer;
+}
+
+.search button {
+  background-color: darkturquoise;
+  color: white;
+  padding: 10px;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.header button.back {
+  background-color: red;
+}
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
+.card {
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+h1 {
+  font-size: 24px;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+ /* Formulario */
+ .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+input[type="text"], input[type="submit"] {
+  padding: 10px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+input[type="submit"] {
+  background-color: darkturquoise;
+  color: white;
+  cursor: pointer;
+}
+
+ .bottom[id="back"] {
+  background-color: darkturquoise;
+  color: white;
+  cursor: pointer;
+}
+
+.content button{
+  background-color: darkturquoise;
+  color: white;
+  cursor: pointer;
+}
+
+.bottoms select {
+  background-color: darkturquoise;
+  color: white;
+  cursor: pointer;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+#search_student {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}

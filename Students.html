@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Modulo Alumno</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="Main.html">Página Principal</a>
+        <a href="Students.html" class="selected">Alumnos</a>
+        
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <h2>Alumnos</h2>
+            <button onclick="location.href='AddStudents.html'">Agregar</button>
+        </div>
+
+        <br>
+
+        <div class="content">
+            <!-- Contenido -->
+            <div class="search-section">
+                <label for="search_student">Search:</label>
+                <input type="text" id="search_student" placeholder="Buscar..." />
+                <button onclick="searchStudent()">Buscar</button>
+            </div>
+
+            <br>
+
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>Legajo</th>
+                        <th>Apellido</th>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody id="alumnoBody">
+                    <!-- Aquí se agregarán dinámicamente las filas de alumnos -->
+                </tbody>
+            </table>
+
+            <div class="pagination-section">
+                <select id="rowsPerPage" onchange="changeRowsPerPage()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                </select>
+
+                <div class="pagination-buttons">
+                    <button onclick="previousPage()">Anterior</button>
+                    <button onclick="nextPage()">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script> <!-- Referencia al nuevo archivo -->
+</body>
+
+</html>
